@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_Descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txt_FCaptura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Fecha de Captura   dd/mm/aa"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/txt_FEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Fecha de Entrega    dd/mm/aa"
+        android:inputType="date" />
+
+    <ViewFlipper
+        android:id="@+id/layout_Img"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/imgnodisponible"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_A1Ant"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Siguiente imagen" />
+
+        <Button
+            android:id="@+id/btn_A1Sig"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Siguiente imagen" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_SImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar una foto" />
+
+    <Button
+        android:id="@+id/btn_InsertarA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar" />
+
+    <Button
+        android:id="@+id/btn_Buscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar" />
+
+</LinearLayout>
